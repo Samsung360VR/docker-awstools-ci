@@ -2,7 +2,7 @@ FROM alpine:3.7
 
 
 RUN apk add --update && \
-    apk add nodejs-current && \
+    apk add nodejs && \
     apk add --virtual .builtin-utils curl bash && \
     apk add --virtual .awscli-runtime-deps python \
          && apk add --virtual .awscli-build-deps py-pip \
