@@ -14,7 +14,7 @@ RUN apk add --update && \
       && rm -rf linux-amd64 \
       && helm init --client-only
 
-ENV HUGO_VERSION 0.27
+ENV HUGO_VERSION 0.43
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_Linux-64bit
 
 # Download and Install hugo
